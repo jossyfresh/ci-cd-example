@@ -13,8 +13,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Build Docker image
-      run: docker build -t jossyfresh2002425/dockerlesson-image .
+    - name: Run pytest
+      run: |
+        docker build -t jossyfresh2002425/fizzbuzz-image .
+        docker run jossyfresh2002425/fizzbuzz-image pytest
 
     - name: Log in to Docker Hub
       run: echo "dckr_pat_I7VWrvkLc3Z_uQOp3w-rvpHueEQ" | docker login -u jossyfresh2002425 --password-stdin
