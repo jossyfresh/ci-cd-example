@@ -1,9 +1,9 @@
 def fizzbuz(x):
-    if x % 5 and x % 3:
+    if x % 5 == 0 and x % 3==0:
         return 'FizzBuzz'
-    elif x % 3:
+    elif x % 3==0:
         return 'Fizz'
-    elif x % 5:
+    elif x % 5==0:
         return 'Buzz'
     else:
         return x
