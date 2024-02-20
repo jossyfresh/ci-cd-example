@@ -4,6 +4,6 @@ def fizzbuz(x):
     elif x % 3:
         return 'Fizz'
     elif x % 5:
-        return 'Bu'
+        return 'Buzz'
     else:
         return x
