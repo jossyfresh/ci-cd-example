@@ -16,8 +16,5 @@ jobs:
     - name: Build Docker image
       run: docker build -t jossyfresh2002425/fizzbuzz-image .
 
-    - name: Log in to Docker Hub
-      run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u jossyfresh2002425 --password-stdin
-
     - name: Push Docker image to Docker Hub
       run: docker push jossyfresh2002425/fizzbuzz-image
