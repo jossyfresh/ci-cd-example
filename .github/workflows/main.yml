@@ -14,10 +14,10 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build Docker image
-      run: docker build -t jossyfresh2002425/fizzbuzz-image .
+      run: docker build -t jossyfresh2002425/dockerlesson-image .
 
     - name: Log in to Docker Hub
       run: echo "dckr_pat_I7VWrvkLc3Z_uQOp3w-rvpHueEQ" | docker login -u jossyfresh2002425 --password-stdin
 
     - name: Push Docker image to Docker Hub
-      run: docker push jossyfresh2002425/fizzbuzz-image
+      run: docker push jossyfresh2002425/dockerlesson-image
